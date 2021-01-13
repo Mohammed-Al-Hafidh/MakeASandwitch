@@ -1,0 +1,33 @@
+﻿<Window x:Class="MakeASandwitch.CustomSandwitch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakeASandwitch"
+        mc:Ignorable="d"
+        Title="CustomSandwitch" Height="393" Width="500">
+    <Grid>
+        <Label Content="Bread" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"/>
+        <ComboBox SelectedIndex="0" Name="combBread" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="151,29,0,0">
+            <ComboBoxItem>Baguette</ComboBoxItem>
+            <ComboBoxItem>Toast</ComboBoxItem>
+            <ComboBoxItem>Pita</ComboBoxItem>
+        </ComboBox>
+        <GroupBox Header="Vegetables" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="448" Margin="10,76,0,0">
+            <CheckBox Name="chkbLettuce" Content="Lettuce" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top"/>
+        </GroupBox>
+
+
+
+        <GroupBox Header="Meats" HorizontalAlignment="Left" Height="65" Margin="10,178,0,0" VerticalAlignment="Top" Width="448"/>
+        <CheckBox Name="chkbTomatos" Content="Tomatos" HorizontalAlignment="Left" Margin="186,102,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="chkbCucumbers" Content="Cucumbers" HorizontalAlignment="Left" Margin="332,102,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="111,284,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="287,284,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <RadioButton GroupName="Meats" Name="rdbChicken" Content="Chicken" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="Meats" Name="rdbTurki" Content="Turki" HorizontalAlignment="Left" Margin="186,210,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="Meats" Name="rdbTofu" Content="Tofu" HorizontalAlignment="Left" Margin="332,210,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

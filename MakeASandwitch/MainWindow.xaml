@@ -1,0 +1,19 @@
+﻿<Window x:Class="MakeASandwitch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakeASandwitch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="277.744" Width="410.534">
+    <Grid>
+        <Button Name="btnMakeSandwitch" Content="Make a Sandwitch" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="29" Click="btnMakeSandwitch_Click"/>
+        <Label Content="Bread" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Veggis" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Meat" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblBread" Content="..." HorizontalAlignment="Left" Margin="122,67,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblVeggis" Content="..." HorizontalAlignment="Left" Margin="122,121,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblMeat" Content="..." HorizontalAlignment="Left" Margin="122,177,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
