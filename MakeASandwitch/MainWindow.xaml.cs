@@ -34,8 +34,16 @@ namespace MakeASandwitch
             CustomSandwitch customSandwitch = new CustomSandwitch();
             customSandwitch.Owner = this;
 
+            ////Method Way
+            //customSandwitch.BackValues += CustomSandwitch_BackValues;
+
+            //Lambda
             customSandwitch.BackValues += (a, b, c) => { bread = a; veggis = b; meat = c; };
+
+
             bool? result = customSandwitch.ShowDialog();
+
+
             if (result == true)
             {
                 lblBread.Content = bread;
@@ -44,9 +52,16 @@ namespace MakeASandwitch
             }
             else if (result == false)
             {
-                MessageBox.Show("Request canceled","Cancel",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Request canceled", "Cancel", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
+        }
+
+        private void CustomSandwitch_BackValues(string arg1, string arg2, string arg3)
+        {
+            lblBread.Content = arg1;
+            lblVeggis.Content = arg2;
+            lblMeat.Content = arg3;
         }
     }
 }

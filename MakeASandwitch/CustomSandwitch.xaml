@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MakeASandwitch"
         mc:Ignorable="d"
-        Title="CustomSandwitch" Height="393" Width="500">
+        Title="CustomSandwitch" Height="393" Width="500" WindowStartupLocation="CenterOwner">
     <Grid>
         <Label Content="Bread" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"/>
         <ComboBox SelectedIndex="0" Name="combBread" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="151,29,0,0">
@@ -24,7 +24,7 @@
         <CheckBox Name="chkbCucumbers" Content="Cucumbers" HorizontalAlignment="Left" Margin="332,102,0,0" VerticalAlignment="Top"/>
         <Button Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="111,284,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
         <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="287,284,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
-        <RadioButton GroupName="Meats" Name="rdbChicken" Content="Chicken" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top"/>
+        <RadioButton IsChecked="True" GroupName="Meats" Name="rdbChicken" Content="Chicken" HorizontalAlignment="Left" Margin="55,210,0,0" VerticalAlignment="Top"/>
         <RadioButton GroupName="Meats" Name="rdbTurki" Content="Turki" HorizontalAlignment="Left" Margin="186,210,0,0" VerticalAlignment="Top"/>
         <RadioButton GroupName="Meats" Name="rdbTofu" Content="Tofu" HorizontalAlignment="Left" Margin="332,210,0,0" VerticalAlignment="Top"/>
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MakeASandwitch"
         mc:Ignorable="d"
-        Title="MainWindow" Height="277.744" Width="410.534">
+        Title="MainWindow" Height="277.744" Width="410.534" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Name="btnMakeSandwitch" Content="Make a Sandwitch" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="29" Click="btnMakeSandwitch_Click"/>
         <Label Content="Bread" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
